@@ -1,0 +1,94 @@
+fun main() {
+  val quizAnswer1 = 15
+  var quizAnswer2 = 3
+  val quizAnswer3 = "isosceles"
+  val quizAnswer4 = 47
+
+  // Write your code below
+ 
+ println("What is 75 / 5?")
+ var studentAnswer1 = Integer.valueOf(readLine())
+ 
+ println("What is value of y in the equation: 6 * 2y = 36 ?")
+ var studentAnswer2  = Integer.valueOf(readLine())
+
+println("What is name the type of triangle that has two equal sides?")
+var studentAnswer3 = readLine()
+
+println("value of 8 * 6 - (3 - 2).")
+var studentAnswer4 = Integer.valueOf(readLine())
+
+var points = 0 
+
+
+ if (studentAnswer1 == quizAnswer1){ // question 1 answer check 
+   points += 25
+  }
+ 
+ if (studentAnswer2 == quizAnswer2){ // question 2 answer check
+   points += 25
+   points ++
+  } else if (studentAnswer2 == quizAnswer2++ || studentAnswer2 == quizAnswer2--) {
+   points += 20
+   points ++
+   }else {
+   points++
+    }
+ 
+
+
+
+ if (studentAnswer3 == quizAnswer3){ // question 3 answer check
+   points += 25
+   points++
+    } else if (studentAnswer3 == "equilateral") {
+   points += 20
+   points++
+    }else {
+   points++
+    }
+
+
+
+
+ if (studentAnswer4 == quizAnswer4){ //question 4 answer check
+   points += 25
+   points++
+    }else if (studentAnswer4 in 44..54){
+   points +=20
+   points++
+    }else {
+   points++
+  }
+
+
+
+ 
+
+
+when (points) {
+  in 0..59 -> println("Your grade results F ")
+  in 60..69 -> println("Your grade results D")
+  in 70..79 -> println ("Your grade results C")
+  in 80..89 -> println("Your grade results B")
+  in 90..100 -> println("Your grade results A")
+  in 101..110 -> println("Your grade results A+")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
